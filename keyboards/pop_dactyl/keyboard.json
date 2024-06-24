@@ -16,7 +16,7 @@
         "cols": ["GP2", "GP3", "GP4", "GP5", "GP6", "GP7", "GP8"],
         "rows": ["GP29","GP28","GP27","GP26","GP22","GP20"]
     },
-    "diode_direction": "COL2ROW",
+    "diode_direction": "ROW2COL",
     "processor": "RP2040",
     "bootloader": "rp2040",
     "layouts": {
@@ -93,10 +93,10 @@
 
                 {"matrix": [11, 1], "x": 10, "y": 5},
                 {"matrix": [11, 2], "x": 11, "y": 5},
-                {"matrix": [11, 1], "x": 12, "y": 5},
+                {"matrix": [11, 3], "x": 12, "y": 5},
 
-                {"matrix": [11, 3], "x": 13, "y": 5},
-                {"matrix": [11, 4], "x": 14, "y": 5}
+                {"matrix": [11, 4], "x": 13, "y": 5},
+                {"matrix": [11, 5], "x": 14, "y": 5}
             ]
         }
     }
