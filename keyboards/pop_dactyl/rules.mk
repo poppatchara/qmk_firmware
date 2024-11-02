@@ -6,11 +6,19 @@ MOUSEKEY_ENABLE = no       # Mouse keys
 EXTRAKEY_ENABLE = no       # Audio control and System control
 CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no        # Commands for debug and configuration
-NKRO_ENABLE = no            # Enable N-Key Rollover
+NKRO_ENABLE = no            # Enable N-Key Rollover'
+
+OLED_ENABLE = yes
+OLED_DRIVER = ssd1306
+OLED_TRANSPORT = i2c
+
+# LTO_ENABLE = yes
+
 # BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
-# RGBLIGHT_ENABLE = yes        # Enable keyboard RGB underglow
-# RGBLIGHT_DRIVER = ws2812
-# WS2812_DRIVER = vendor
+RGBLIGHT_ENABLE = yes        # Enable keyboard RGB underglow
+RGBLIGHT_DRIVER = ws2812
+WS2812_DRIVER = vendor
 # AUDIO_ENABLE = no           # Audio output
+
 SPLIT_KEYBOARD = yes
 SERIAL_DRIVER = vendor
