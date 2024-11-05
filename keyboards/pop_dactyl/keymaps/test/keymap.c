@@ -4,8 +4,12 @@
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
 // entirely and just use numbers.
-#define _QWERTY 0
-#define _RGBTEST 1
+
+// flash command
+// qmk flash -kb pop_dactyl -km test -bl uf2-split-right -j 16
+
+#define Layer_main 0
+#define Layer_utils 1
 #define _CLEAR 2
 
 // Some basic macros
@@ -19,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT,    KC_Z,       KC_X,       KC_C,       KC_V,       KC_B,
                                 KC_COMM,    KC_DOT,
                                             KC_1,       KC_2,       KC_3,
-                                            LT(Layer_Utils, KC_4),       KC_5,
+                                            LT(Layer_utils, KC_4),       KC_5,
 
         // right hand
         KC_6,       KC_7,       KC_8,       KC_9,       KC_0,       KC_MINS,
@@ -29,10 +33,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                 KC_LEFT,    KC_UP,
 
         KC_1,       KC_2,       KC_3,
-        KC_4,       LT(Layer_Utils, KC_5)
+        KC_4,       LT(Layer_utils, KC_5)
     ),
 
-    [Layer_Utils] = LAYOUT_5x6(
+    [Layer_utils] = LAYOUT_5x6(
         // left hand
         XXXXXXX,    XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,       QK_BOOT,
         XXXXXXX,    XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,       XXXXXXX,
